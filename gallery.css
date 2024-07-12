@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+#gallery {
+    max-width: 1200px;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li img {
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+ul li img:hover {
+    filter: none;
+}
+
+ul li img.inactive {
+    filter: grayscale(100%);
+}
